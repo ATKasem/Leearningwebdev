@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>This is a website with the worst UI to select your birthday</h1>
-    <h2>Select your birthday, if you can</h2>
+    <h2>Select your birthday</h2>
     <h3>Year</h3>
     <div>
         <div id="yearDisplay">1890</div>
@@ -48,7 +48,7 @@
         });
         const submitButton = document.getElementById("submit");
         submitButton.addEventListener("click", () => {
-            result.textContent = "Your birthday is " + yearSlider.value + " " + monthSlider.value + " " + daySlider.value + " " + new Date(yearSlider.value, monthSlider.value, daySlider.value).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+            result.textContent = "Your birthday is " + new Date(yearSlider.value, monthSlider.value, daySlider.value).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
         });
     </script>
 </body>
