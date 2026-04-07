@@ -20,7 +20,7 @@ I am an aspiring software engineer using this repo to practice:
 
 ## Running The Project
 
-Open [HTML/website.html](HTML/website.html) in a browser.
+Open [Website/index.html](Website/index.html) in a browser (double-click the file, or use your editor’s “Open in Browser” / a local static server).
 
 ## Status
 
