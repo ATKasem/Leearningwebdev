@@ -20,7 +20,7 @@ I am an aspiring software engineer using this repo to practice:
 
 ## Running The Project
 
-Open [Website/index.html](Website/index.html) in a browser (double-click the file, or use your editor’s “Open in Browser” / a local static server).
+Open (http://127.0.0.1:3000/Website/index.html?serverWindowId=fd2a968d-003e-4718-a8c8-e258323a40f2) in a browser (double-click the file, or use your editor’s “Open in Browser” / a local static server).
 
 ## Status
 
