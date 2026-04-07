@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <h1>This is a website with the worst UI to select your birthday</h1>
+    <h2>Select your birthday</h2>
+    <h3>Year</h3>
+    <div> <!-- Year display -->
+        <div id="yearDisplay">1890</div>
+        <input type="range" id="year" min="-202600" max="202600" value="1996"/> 
+    </div>
+    <h3>Month</h3>
+    <div>
+        <!-- Month display -->
+        <div id="monthDisplay">1</div>
+        <input type="range" id="month" min="-30000" max="30000" value="1996"/>
+    </div>
+    <h3>Day</h3>
+    <div>
+        <!-- Day display -->
+        <div id="dayDisplay">1</div>
+        <input type="range" id="day" min="-30000" max="30000" value="1996"/>
+    </div>
+    <button id="submit">Submit</button>
+    <div id="result"></div>
+    <script src="main.js" defer></script>
+</body>
+</html>
