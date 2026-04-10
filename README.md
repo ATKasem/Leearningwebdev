@@ -1,4 +1,4 @@
-# Learning Web Dev
+# My Vanilla front end project
 
 This repository is a work in progress while I learn web development and build small projects for fun.
 
@@ -20,8 +20,8 @@ I am an aspiring software engineer using this repo to practice:
 
 ## Running The Project
 
-Open (http://127.0.0.1:3000/Website/index.html?serverWindowId=fd2a968d-003e-4718-a8c8-e258323a40f2) in a browser (double-click the file, or use your editor’s “Open in Browser” / a local static server).
+Open [HTML/website.html](HTML/website.html) in a browser (double-click the file, or use your editor’s “Open in Browser” / a local static server). Assets live alongside it: `styles.css` for layout and look, `app.js` for behavior.
 
 ## Status
 
-This project is unfinished and experimental. I may improve it, replace parts of it, or add completely different projects over time.
+This project is unfinished and experimental. I may improve it, replace parts of it, or add completely different projects over time, or even leave as is. It's all just to get introduced to front end. 

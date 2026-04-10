@@ -1,0 +1,68 @@
+/*
+ * Styles for website.html — layout, colors, and control sizing.
+ * Class names are minimal here; most rules target ids that match app.js hooks.
+ */
+
+/* ------------------------------------------------------------------------- */
+/* Page shell: full-height centered column, dark theme                      */
+/* ------------------------------------------------------------------------- */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0d1d30;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Slider readouts (#yearDisplay, #monthDisplay, #dayDisplay)               */
+/* ------------------------------------------------------------------------- */
+#yearDisplay,
+#monthDisplay,
+#dayDisplay {
+    font-size: 1.25rem;
+    color: #f7f7f7;
+    font-weight: bold;
+    margin-bottom: 0.35rem;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Range inputs — capped width so sliders don’t stretch edge-to-edge        */
+/* ------------------------------------------------------------------------- */
+#year,
+#month,
+#day {
+    width: min(320px, 85vw);
+}
+
+/* ------------------------------------------------------------------------- */
+/* Primary action                                                           */
+/* ------------------------------------------------------------------------- */
+#submit {
+    background-color: #4caf50;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Message area (populated by app.js after Submit)                          */
+/* ------------------------------------------------------------------------- */
+#result {
+    font-size: 16px;
+    margin-top: 1rem;
+    max-width: 28rem;
+}

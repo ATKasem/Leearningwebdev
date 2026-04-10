@@ -4,30 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="design.css">
+    <!-- Global styles: see styles.css -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!--
+      Birthday picker (intentionally awkward UX — huge slider ranges).
+      Behavior lives in app.js; it expects these element ids to stay in sync.
+    -->
     <h1>This is a website with the worst UI to select your birthday</h1>
     <h2>Select your birthday</h2>
+
+    <!-- Each section: a readout div + range input. app.js mirrors slider values into the divs. -->
     <h3>Year</h3>
-    <div> <!-- Year display -->
+    <div>
         <div id="yearDisplay">1890</div>
-        <input type="range" id="year" min="-202600" max="202600" value="1996"/> 
+        <input type="range" id="year" min="-202600" max="202600" value="1996"/>
     </div>
+
     <h3>Month</h3>
     <div>
-        <!-- Month display -->
         <div id="monthDisplay">1</div>
         <input type="range" id="month" min="-30000" max="30000" value="1996"/>
     </div>
+
     <h3>Day</h3>
     <div>
-        <!-- Day display -->
         <div id="dayDisplay">1</div>
         <input type="range" id="day" min="-30000" max="30000" value="1996"/>
     </div>
+
     <button id="submit">Submit</button>
+    <!-- Filled by app.js after Submit (formatted date string) -->
     <div id="result"></div>
-    <script src="main.js" defer></script>
+
+    <!-- defer: run after HTML is parsed so getElementById finds the elements above -->
+    <script src="app.js" defer></script>
 </body>
 </html>
